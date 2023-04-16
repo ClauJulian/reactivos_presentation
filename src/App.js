@@ -3,7 +3,7 @@ import './App.css';
 
 import Titulo from './components/Titulo/Titulo';
 import Leader from './components/Leader/Leader';
-import Developers from './components/Developers';
+import Developers from './components/Developers/Developers';
 import Footer from './components/Footer/Footer';
 
 import json from './utis/grupo2.json';

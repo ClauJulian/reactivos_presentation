@@ -9,9 +9,16 @@ import styleTitulo from './Titulo.module.css'
 // 4. TITULO_JSX Usar -> los estilos con className={styleTitulo.NOMBRECLASE}
 
 
-const Titulo = () => {
+const Titulo = ({group2}) => {
   return (
-    <div>Titulo</div>
+     <>
+      <div className={styleTitulo.container}>
+        <h1 className={styleTitulo.fuenteTitulo}>{group2.nombreGrup}</h1>
+      </div>
+      <div className={styleTitulo.containerId}>
+        <h2 className={styleTitulo.fuenteID}> ID: {group2.idGroup}</h2>
+      </div>
+    </>
   )
 }
 

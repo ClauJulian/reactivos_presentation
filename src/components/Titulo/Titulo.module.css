@@ -1,0 +1,28 @@
+.container{
+    background-color: var(--primary);
+    width: 100%;
+    text-align: center;
+    
+
+}
+
+.fuenteTitulo{
+
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-size: 2em;
+    font-family: var(--fuenteTitulo);
+    
+}
+
+.containerId{
+    margin-top: 10px;
+    border-top: 3px solid var(--contenedorSubtitulos);
+    width: 80%;
+    text-align: end;
+}
+
+.fuenteID{
+    font-size: 1em;
+    
+}

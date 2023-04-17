@@ -8,7 +8,10 @@ import styleDevelopers from './Developers.module.css'
 // 4. DEVELOPERS_JSX Usar -> los estilos con className={styleDevelopers.NOMBRECLASE}
 
 
-const Developers = () => {
+const Developers = (props) => {
+  
+  const {developers} = props;
+  
   return (
     <div>Developers</div>
   )

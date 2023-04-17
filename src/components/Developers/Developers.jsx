@@ -1,16 +1,12 @@
-import React from 'react'
-import styleDevelopers from './Developers.module.css'
+import React from 'react';
+import styleDevelopers from './Developers.module.css';
 import Card from '../Card/Card';
 
-
-
-
-const Developers = ({developers}) => {
-   
+const Developers = ({ developers }) => {
   return (
-    <div className="grid-container">
+    <div className={styleDevelopers.gridContainer}>
       {developers.map((member) => (
-        <div key={member.id} className="grid-item">
+        <div key={member.id} className={styleDevelopers.gridItem}>
           <Card member={member} />
         </div>
       ))}
@@ -18,5 +14,4 @@ const Developers = ({developers}) => {
   );
 };
 
-
-export default Developers
+export default Developers;

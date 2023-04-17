@@ -10,7 +10,7 @@ import styleDevelopers from './Developers.module.css'
 
 const Developers = (props) => {
   
-  
+  const {developers} = props;
   
   return (
     <div>Developers</div>

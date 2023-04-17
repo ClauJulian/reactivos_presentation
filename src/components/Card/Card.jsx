@@ -1,5 +1,5 @@
 import React from 'react'
-import Card from './Card'
+
 import styleCard from './Card.module.css'
 
 
@@ -7,14 +7,21 @@ import styleCard from './Card.module.css'
  
 
 const Card = ({member}) => {
+ 
   return (
-    <div>
-      <h3>Card</h3>
-        <div>{member.img}</div>
-      <div>
-        <h1>{member.rol}</h1>
-        <h1>{member.email}</h1>
+    <div className={styleCard.cardContainer}>
+
+      <div className={styleCard.boxImg} >
+        <p className={styleCard.rol}>{member.rol}</p>
+        <div >
+          <img src="/img/people1.png" className={styleCard.img} alt="img"/>    
+        </div>
       </div>
+
+      <div>  
+        <p className={styleCard.btnMail}>{member.email}</p>    
+      </div>
+
     </div>
   )
 }

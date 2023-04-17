@@ -1,13 +1,11 @@
-import logo from './logo.svg';
+import React, { useState, useEffect } from 'react';
+//import logo from './logo.svg';
 import './App.css';
-
 import Titulo from './components/Titulo/Titulo';
 import Leader from './components/Leader/Leader';
 import Developers from './components/Developers/Developers';
 import Footer from './components/Footer/Footer';
-
 import json from './utis/grupo2.json';
-import { useState } from 'react';
 
 // APP_JSX - Desestructurar el json y armar 2 Objetos -> members, grupo2.
 //          -> members tiene que tener: id, rol, email, img
@@ -16,57 +14,43 @@ import { useState } from 'react';
 // APP_JSX - Armar la estructura de Presentacion.
 // APP_CSS - Generar los estilos en App.css
 
-
 function App() {
-  const [miembrosState , setMiembrosState]= useState({
-    "id": "G2-WCZEE",
-    "leader": "wg.claudiajulian@gmail.com",
-    "members": [
-      "cristian.zolkowski@gmail.com",
-      "zeduard89@gmail.com",
-      "eugenia.veron@hotmail.com",
-      "eve-lanegra@hotmail.com"
-    ]
-  });
 
-// ARMAR OBJETO MEMBERS  
-const miembrosDesarrolladores = miembrosState.members;
-const members = miembrosDesarrolladores.map((desarrollador)=>{return {"id":new Date(),"rol":"developer","email":desarrollador}})  
-  
-const lider ={"id": new Date(),
-            "rol": "leader",
-            "email": miembrosState.leader
-}
-  
-members.push(lider);  
-
-// ARMAR OBJETO GRUPO 2
-const {id} = miembrosState;
-const nombre = "react-ivos";
-const grupo2 = {id, nombre}
-
-
-// ENVIO DE OBJETOS A COMPONENTES
-return (
-<div>
-  <div>
-      <div>
-          <Titulo key={grupo2.id} grupo2={grupo2}/>    
-      </div>
-      <div>
-          <Leader key={grupo2.id} members={members}/>
-      </div>
-  </div>
-
-  <div>
-        <Developers key={grupo2.id} members={members}/>   
-  </div>
-  
-  <div>
-      <Footer key={grupo2.id} grupo2={grupo2}/>
-  </div>
-</div>
-);
+const {id,leader,members} = json[0]
+//Destructurin del Archivo Json, es un Array con elementos y 1 objeto
+const group2 = {
+  idGroup: id,
+  nombreGrup: 'Reactivos'
 }
 
-export default App;
+let [developers, setDevelopers] = useState([])
+//Creo un Stado, para los Developer, Array vacio por que voy a trabajar
+//Con members que es un array con los emails
+
+
+//Durante el montaje del componente, recorro el array y armo un objeto
+//con cada uno de los members {}
+//No lo puse imagen por que el json no tiene esa info, quizas convenga agregarla
+//por elmento o modificar el jason
+useEffect(() => {
+  setDevelopers(
+    members.map(dev => ({
+      id: Date.now(),
+      rol: 'Developer',
+      email: dev
+    }))
+  );
+}, []);
+
+
+  return (
+    <div className="divApp">
+      <Titulo group2={group2}/>
+      <Leader leader={leader}/>
+      <Developers developers={developers}/>
+      <Footer id={id}/>
+    </div>
+  );
+}
+
+export default App

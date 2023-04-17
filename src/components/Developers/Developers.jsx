@@ -1,8 +1,8 @@
 import React from 'react'
-
 import styleDevelopers from './Developers.module.css'
+import Card from '../Card/Card';
 
-import Card from './Card';
+
 
 
 const Developers = ({developers}) => {

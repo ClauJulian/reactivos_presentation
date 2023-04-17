@@ -23,6 +23,14 @@ const group2 = {
   nombreGrup: 'Reactivos'
 }
 
+//Correcion leader
+const leaderDetail = {
+  id: Date.now(),
+  rol:'Leader',
+  email:leader
+}
+
+
 let [developers, setDevelopers] = useState([])
 //Creo un Stado, para los Developer, Array vacio por que voy a trabajar
 //Con members que es un array con los emails
@@ -46,7 +54,7 @@ useEffect(() => {
   return (
     <div className="divApp">
       <Titulo group2={group2}/>
-      <Leader leader={leader}/>
+      <Leader leader={leaderDetail}/>
       <Developers developers={developers}/>
       <Footer id={id}/>
     </div>

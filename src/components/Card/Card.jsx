@@ -13,7 +13,7 @@ const Card = ({member}) => {
         <div>{member.img}</div>
       <div>
         <h1>{member.rol}</h1>
-        <h1>{member.email}</h1>    
+        <h1>{member.email}</h1>
       </div>
     </div>
   )

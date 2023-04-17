@@ -3,14 +3,21 @@ import React from 'react'
 import styleCard from './Card.module.css'
 
 
-// 1. CARD_JSX -> Armar el modelo de Card que va a ser utilizado por Leader, Developers
-// 2. CARD_MODULE.CSS -> Generar los estilos en Card.module.css
-// 3. CARD_JSX Usar -> los estilos con className={styleCard.NOMBRECLASE}
+// La card es un componente que no se ve por si sola. Está armada para que reciba un miembro que se llama "member", que tiene un id, una img, un rol, un email. 
+ 
 
-const Card = () => {
+const Card = ({member}) => {
   return (
-    <div>Card</div>
+    <div>
+      <h3>Card</h3>
+        <div>{member.img}</div>
+      <div>
+        <h1>{member.rol}</h1>
+        <h1>{member.email}</h1>    
+      </div>
+    </div>
   )
 }
+
 
 export default Card

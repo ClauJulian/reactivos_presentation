@@ -17,7 +17,7 @@ const member = {leader};
   return (
     <>
       <div className={styleLeader.leader}>
-        <Card key={member.id} member={member}/>
+        <Card key={member.id} member={leader}/>
       </div>
     </>
 

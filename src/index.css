@@ -39,3 +39,7 @@ code {
   flex-direction: row;
 }
 
+.footer {
+  background-color: black;
+}
+

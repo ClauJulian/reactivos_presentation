@@ -37,6 +37,10 @@ code {
 .divMembers {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  background-color: #fafbff;
+  width: 100%;
+  
 }
 
 .footer {

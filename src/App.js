@@ -53,24 +53,24 @@ const leaderDetail = {
 }
 
 
-  return (
+return (
     
-    <div className="divApp">
-      <Titulo group2={group2}/>
-      
-      <div className='divMembers'>
-        <div className='divLeader'>
-          <Leader leader={leaderDetail}/>
-        </div>
-        <div>
-          <Developers developers={developers}/>
-        </div>
+  <div className="divApp">
+    <Titulo group2={group2}/>
+    
+    <div className='divMembers'>
+      <div className='divLeader'>
+        <Leader leader={leaderDetail}/>
       </div>
-      
-      <Footer  id={id}/>
+      <div>
+        <Developers developers={developers}/>
+      </div>
     </div>
     
-  );
+    <Footer/>
+  </div>
+  
+);
 }
 
 export default App

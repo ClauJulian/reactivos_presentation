@@ -1,6 +1,6 @@
 import React from 'react'
 import Card from '../Card/Card';
-import styleLeader from './Leader.module.css';
+import './Leader.module.css'
 
 
 // 1. LEADER_JSX -> Traer el modelo de /Card
@@ -16,7 +16,7 @@ const member = {leader};
 
   return (
     <>
-      <div className={styleLeader.leader}>
+      <div >
         <Card key={member.id} member={leader}/>
       </div>
     </>

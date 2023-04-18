@@ -1,5 +1,5 @@
 import React from 'react'
-
+import './Footer.module.css'
 import styleFooter from './Footer.module.css'
 
 
@@ -8,11 +8,11 @@ import styleFooter from './Footer.module.css'
 // 3. FOOTER_MODULE.CSS -> Generar los estilos en Footer.module.css
 // 4. FOOTER_JSX Usar -> los estilos con className={styleFooter.NOMBRECLASE}
 
-const Footer = () => {
+const Footer = ({id}) => {
   return (
     <>
-      <div className={styleFooter.container}>
-        <h1> </h1>
+      <div className={styleFooter.container} >
+        <h1>Codo a Codo - React 2023</h1>
       </div>
     </>
   )

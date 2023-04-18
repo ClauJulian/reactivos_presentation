@@ -43,3 +43,10 @@ code {
   background-color: black;
 }
 
+.divLeader {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 10rem;
+} 
+

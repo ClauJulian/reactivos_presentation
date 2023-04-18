@@ -57,10 +57,16 @@ const leaderDetail = {
     
     <div className="divApp">
       <Titulo group2={group2}/>
+      
       <div className='divMembers'>
-      <Leader leader={leaderDetail}/>
-        <Developers developers={developers}/>
+        <div className='divLeader'>
+          <Leader leader={leaderDetail}/>
+        </div>
+        <div>
+          <Developers developers={developers}/>
+        </div>
       </div>
+      
       <Footer  id={id}/>
     </div>
     

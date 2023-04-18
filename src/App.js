@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 //import logo from './logo.svg';
-import './App.css';
+//import './App.css';
+import './index.css';
 import Titulo from './components/Titulo/Titulo';
 import Leader from './components/Leader/Leader';
 import Developers from './components/Developers/Developers';
@@ -44,12 +45,16 @@ useEffect(() => {
 
 
   return (
+    
     <div className="divApp">
       <Titulo group2={group2}/>
-      <Leader leader={leader}/>
-      <Developers developers={developers}/>
-      <Footer id={id}/>
+      <div className='divMembers'>
+        <Leader leader={leader}/>
+        <Developers developers={developers}/>
+      </div>
+      <Footer className='footer' id={id}/>
     </div>
+    
   );
 }
 

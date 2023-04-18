@@ -1,28 +1,28 @@
 .container{
-    background-color: var(--primary);
+    background-color: var(--colorFondo);
     width: 100%;
     text-align: center;
-    
-
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.3);
 }
 
 .fuenteTitulo{
-
     text-transform: uppercase;
     letter-spacing: 10px;
     font-size: 2em;
     font-family: var(--fuenteTitulo);
-    
+    color: #262B2B;    
 }
 
 .containerId{
-    margin-top: 10px;
-    border-top: 3px solid var(--contenedorSubtitulos);
+    margin-top: 20px;
+    border-top: 7px solid var(--contenedorSubtitulos);
     width: 80%;
     text-align: end;
 }
 
 .fuenteID{
     font-size: 1em;
-    
+    font-family: var(--fuenteNombres);
+    font-weight: bold;
+    color: #5e607297;   
 }

@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Mulish:wght@600;800&family=Nunito+Sans&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Mulish:wght@600;800&family=Nunito&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Mulish:wght@600;800&family=Nunito&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
 body {
   margin: 0;
@@ -14,9 +16,9 @@ body {
   --contenedorSubtitulos: #F3DA4C;
   --contenedorNombre: #5E6072;
 
-  --fuenteTitulo: 'Nunito Sans', sans-serif;
-  --fuenteSubTitulos: 'Montserrat', sans-serif;
-  --fuenteNombres: 'Mulish', sans-serif;
+  --fuenteTitulo: 'Nunito', sans-serif;
+  --fuenteNombres: 'Montserrat', sans-serif;
+  --fuenteSubtitulos: 'Mulish', sans-serif;
 }
 
 code {

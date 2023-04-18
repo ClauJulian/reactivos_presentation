@@ -10,7 +10,11 @@ import styleFooter from './Footer.module.css'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <>
+      <div className={styleFooter.container}>
+        <h1> </h1>
+      </div>
+    </>
   )
 }
 

@@ -18,8 +18,8 @@ const Card = ({member}) => {
         </div>
       </div>
 
-      <div>  
-        <p className={styleCard.btnMail}>{member.email}</p>    
+      <div className={styleCard.btnMail}>  
+        <p>{member.email}</p>    
       </div>
 
     </div>

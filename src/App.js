@@ -25,6 +25,7 @@ const group2 = {
 }
 
 
+
 let [developers, setDevelopers] = useState([])
 //Creo un Stado, para los Developer, Array vacio por que voy a trabajar
 //Con members que es un array con los emails
@@ -45,12 +46,19 @@ useEffect(() => {
 }, []);
 
 
+const leaderDetail = {
+  id: Date.now(),
+  rol:'Leader',
+  email:leader
+}
+
+
   return (
     
     <div className="divApp">
       <Titulo group2={group2}/>
       <div className='divMembers'>
-        <Leader leader={leader}/>
+      <Leader leader={leaderDetail}/>
         <Developers developers={developers}/>
       </div>
       <Footer  id={id}/>

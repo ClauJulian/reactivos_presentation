@@ -4,10 +4,10 @@ import styleCard from './Card.module.css'
 
 
 // La card es un componente que no se ve por si sola. Está armada para que reciba un miembro que se llama "member", que tiene un id, una img, un rol, un email. 
- 
+
 
 const Card = ({member}) => {
- 
+
   return (
     <div className={styleCard.cardContainer}>
 
